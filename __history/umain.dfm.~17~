@@ -1,0 +1,109 @@
+object fmain: Tfmain
+  Left = 0
+  Top = 0
+  Margins.Left = 6
+  Margins.Top = 6
+  Margins.Right = 6
+  Margins.Bottom = 6
+  BorderStyle = bsDialog
+  Caption = 'fmain'
+  ClientHeight = 817
+  ClientWidth = 709
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -24
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Padding.Left = 30
+  Padding.Top = 30
+  Padding.Right = 30
+  Padding.Bottom = 30
+  OnCreate = FormCreate
+  PixelsPerInch = 192
+  TextHeight = 32
+  object rzpnl1: TRzPanel
+    Left = 30
+    Top = 610
+    Width = 649
+    Height = 177
+    Margins.Left = 6
+    Margins.Top = 6
+    Margins.Right = 6
+    Margins.Bottom = 6
+    Align = alBottom
+    BorderOuter = fsNone
+    TabOrder = 1
+    ExplicitLeft = 0
+    ExplicitTop = 640
+    ExplicitWidth = 1006
+  end
+  object rzpnl2: TRzPanel
+    Left = 30
+    Top = 30
+    Width = 649
+    Height = 580
+    Margins.Left = 6
+    Margins.Top = 6
+    Margins.Right = 6
+    Margins.Bottom = 15
+    Align = alClient
+    BorderOuter = fsNone
+    Padding.Left = 50
+    Padding.Top = 50
+    Padding.Right = 50
+    Padding.Bottom = 50
+    TabOrder = 0
+    ExplicitLeft = 208
+    ExplicitTop = 128
+    ExplicitWidth = 200
+    ExplicitHeight = 200
+    object bt1: TRzButton
+      Left = 50
+      Top = 100
+      Width = 549
+      Height = 50
+      Margins.Left = 6
+      Margins.Top = 6
+      Margins.Right = 6
+      Margins.Bottom = 15
+      Align = alTop
+      Caption = 'Simulasi Pph21 Tahunan'
+      TabOrder = 1
+      ExplicitLeft = 16
+      ExplicitTop = 16
+      ExplicitWidth = 150
+    end
+    object bt2: TRzButton
+      Left = 50
+      Top = 50
+      Width = 549
+      Height = 50
+      Margins.Left = 6
+      Margins.Top = 6
+      Margins.Right = 6
+      Margins.Bottom = 15
+      Align = alTop
+      Caption = 'Simulasi Pph21 Bulanan'
+      TabOrder = 0
+      OnClick = bt2Click
+      ExplicitLeft = 16
+      ExplicitTop = 16
+      ExplicitWidth = 150
+    end
+    object bt3: TRzButton
+      Left = 50
+      Top = 150
+      Width = 549
+      Height = 50
+      Margins.Left = 6
+      Margins.Top = 6
+      Margins.Right = 6
+      Margins.Bottom = 15
+      Align = alTop
+      Caption = 'Tabel Tarif TER'
+      TabOrder = 2
+      ExplicitTop = 265
+    end
+  end
+end

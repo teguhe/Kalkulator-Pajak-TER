@@ -1,0 +1,70 @@
+unit umain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, RzPanel, RzButton;
+
+type
+  Tfmain = class(TForm)
+    rzpnl1: TRzPanel;
+    rzpnl2: TRzPanel;
+    bt1: TRzButton;
+    bt2: TRzButton;
+    bt3: TRzButton;
+    procedure FormCreate(Sender: TObject);
+    procedure bt2Click(Sender: TObject);
+    procedure bt1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fmain: Tfmain;
+
+implementation
+
+{$R *.dfm}
+
+uses uBulanan, uTERBulanan;
+
+procedure Tfmain.bt1Click(Sender: TObject);
+begin
+
+  Application.CreateForm(TfTERBulanan, fTERBulanan);
+  with fTERBulanan do
+  begin
+    Caption  :='Perhitungan TER bulanan dan Akhir Tahun';
+    Position :=poDesktopCenter;
+    ShowModal;
+  end;
+
+end;
+
+procedure Tfmain.bt2Click(Sender: TObject);
+begin
+
+  Application.CreateForm(Tfbulanan, fbulanan);
+  with fbulanan do
+  begin
+    Caption  :='Perhitungan PPh21 Masa dan TER';
+    Position :=poDesktopCenter;
+    ShowModal;
+  end;
+
+end;
+
+procedure Tfmain.FormCreate(Sender: TObject);
+begin
+
+  Position:=poScreenCenter;
+  Caption:='';
+  rzpnl1.Caption:='Kalkulator Pajak Penghasilan'+#13+
+                  'by Teguh Prasetyo, M.Si.';
+
+end;
+
+end.

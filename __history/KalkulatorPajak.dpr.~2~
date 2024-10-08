@@ -1,0 +1,14 @@
+program KalkulatorPajak;
+
+uses
+  Vcl.Forms,
+  umain in 'umain.pas' {fmain};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tfmain, fmain);
+  Application.Run;
+end.
