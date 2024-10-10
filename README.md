@@ -1,23 +1,22 @@
 # Aplikasi Simulasi Perhitungan Pajak Penghasilan dengan Tarif Efektif Rata-Rata
 
 Author     : Teguh Prasetyo
-Language   : SQL, kompatibel dengan mySQL dan MariaDB
-Date       : 1 Agustus 2023
+Language   : Pascal (Dibuat dengan Delphi 12)
+Date       : 10 September 2023
 
-# Tools
-- Delphi 12
 
 # Deskripsi
+- Aplikasi ini digunakan untuk mensimulasikan perhitungan pajak penghasilan dengan perhitungan TER
 
-Aplikasi ini digunakan untuk mensimulasikan perhitungan pajak penghasilan dengan perhitungan TER
 
 # PETUNJUK PENGGUNAAN
-
 - langsung jalankan aja file exenya di folder /win32/debug
+
 
 # Referensi & Regulasi Aktif
 - PP 58 TAHUN 2023
 - PMK 168 TAHUN 2023
+
 
 # Referensi regulasi lama
 - UU 7 TAHUN 1991 <- UU 7 TAHUN 1983
